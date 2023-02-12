@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS ArtistGenre (
 CREATE TABLE IF NOT EXISTS Albums (
 	album_id SERIAL PRIMARY KEY,
 	name VARCHAR(150) NOT NULL,
-	release_date INTEGER NOT NULL CHECK (release_date > 1900)
+	release_date DATE NOT NULL CHECK (release_date > '01-01-1990')
 );
 
 CREATE TABLE IF NOT EXISTS AlbumsArtists (
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Tracks (
 CREATE TABLE IF NOT EXISTS MixTapes (
 	mix_tapes_id SERIAL PRIMARY KEY,
 	name VARCHAR(100) UNIQUE NOT NULL,
-	release_date INTEGER NOT NULL CHECK (release_date > 1900)
+	release_date DATE NOT NULL CHECK (release_date > '01-01-1990')
 );
 
 CREATE TABLE IF NOT EXISTS MixTapesTracks (

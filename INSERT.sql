@@ -26,15 +26,15 @@ VALUES  (1, 1, 1),
 		(8, 8, 3);
 
 INSERT INTO albums(album_id, name, release_date)
-VALUES  (1, 'The Resistance', 2009),
-		(2, 'Co’n’dorn', 2012),
-		(3, 'Nobody Is Not Loved', 2021),
-		(4, 'Human After All', 2005),
-		(5, 'Rebel Heart', 2014),
-		(6, 'The Joshua Tree', 1987),
-		(7, 'Play', 1999),
-		(8, 'Under Darkening Skies', 2021),
-		(9, 'Origin of Symmetry', 2001);
+VALUES  (1, 'The Resistance', '14-09-2009'),
+		(2, 'Co’n’dorn', '25-05-2012'),
+		(3, 'Nobody Is Not Loved', '01-01-2021'),
+		(4, 'Human After All', '14-03-2005'),
+		(5, 'Rebel Heart', '06-03-2014'),
+		(6, 'The Joshua Tree', '09-03-1987'),
+		(7, 'Play', '17-05-1999'),
+		(8, 'Under Darkening Skies', '01-01-2021'),
+		(9, 'Origin of Symmetry', '17-07-2001');
 	
 INSERT INTO albumsartists(id, album_id, artist_id)
 VALUES  (1, 1, 1),
@@ -65,11 +65,11 @@ VALUES  (1, 'Uprising', 5.03, 1),
 		(15, 'New Born', 6.01, 9);
 	
 INSERT INTO mixtapes(mix_tapes_id, name, release_date)
-VALUES  (1, 'Hullabaloo Soundtrack', 2002),
-		(2, 'The Best of 1980–1990', 1998),
-		(3, 'Finally Enough Love: 50 Number Ones', 2022),
-		(4, 'The Immaculate Collection', 1990),
-		(5, 'Celebration', 2009);
+VALUES  (1, 'Hullabaloo Soundtrack', '01-07-2002'),
+		(2, 'The Best of 1980–1990', '09-11-1998'),
+		(3, 'Finally Enough Love: 50 Number Ones', '19-08-2022'),
+		(4, 'The Immaculate Collection', '09-11-1990'),
+		(5, 'Celebration', '18-09-2009');
 
 INSERT INTO mixtapestracks(id, tracks_id, mix_tapes_id)
 VALUES  (1, 14, 1),
